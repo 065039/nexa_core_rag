@@ -1,0 +1,19 @@
+file,department,doc_type,title,version,effective_date,status,access_level,owner
+HR/HR_Leave_Policy_2025.pdf,HR,Policy,Leave Policy,2025.1,2025-04-01,superseded,internal,Head of HR
+HR/HR_Leave_Policy_2026.pdf,HR,Policy,Leave Policy,2026.1,2026-04-01,current,internal,Head of HR
+HR/HR_Employee_Handbook.docx,HR,Handbook,Employee Handbook,2026.1,2026-01-01,current,internal,Head of HR
+HR/HR_Benefits_by_Grade.xlsx,HR,Benefits Schedule,Benefits by Grade,2026.1,2026-04-01,current,restricted,Head of HR
+Finance/FIN_Expense_Reimbursement_Policy.pdf,Finance,Policy,Expense Reimbursement Policy,2026.1,2026-01-01,current,internal,Chief Financial Officer
+Finance/FIN_Approval_Matrix.xlsx,Finance,Approval Matrix,Purchase Approval Matrix,2026.1,2026-01-01,current,internal,Finance Controller
+Finance/FIN_Vendor_Payment_Terms.docx,Finance,Procedure,Vendor Payment Terms,2026.1,2026-02-01,current,restricted,Finance Controller
+IT/IT_Information_Security_Policy.pdf,IT,Policy,Information Security Policy,2026.1,2026-01-15,current,internal,Chief Information Security Officer
+IT/IT_Asset_Management_Policy.docx,IT,Policy,IT Asset Management Policy,2026.1,2026-01-15,current,internal,IT Manager
+IT/IT_Vendor_Security_Checklist.xlsx,IT,Checklist,Vendor Security Assessment Checklist,2026.1,2026-01-15,current,internal,CISO
+Procurement/PROC_Procurement_Policy.pdf,Procurement,Policy,Procurement Policy,2026.1,2026-01-01,current,internal,Head of Procurement
+Procurement/PROC_Vendor_Evaluation_Matrix.xlsx,Procurement,Evaluation Matrix,Vendor Evaluation Matrix,2026.1,2026-01-01,current,internal,Head of Procurement
+Legal/LEGAL_Contract_Management_Policy.pdf,Legal,Policy,Contract Management Policy,2026.1,2026-01-01,current,internal,General Counsel
+Legal/LEGAL_NDA_Standard_Terms.docx,Legal,Legal Template,NDA Standard Terms,2026.1,2026-01-01,current,restricted,General Counsel
+Legal/LEGAL_Data_Privacy_Policy.docx,Legal,Policy,Data Privacy Policy,2026.1,2026-03-01,current,internal,Data Protection Officer
+Customer_Service/CS_Service_Level_Agreement.pdf,Customer_Service,Service Level Agreement,Customer Service Level Agreement,2026.1,2026-01-01,current,internal,Head of Customer Experience
+Customer_Service/CS_Complaint_and_Refund_Policy.docx,Customer_Service,Policy,Complaint Handling and Refund Policy,2026.1,2026-01-01,current,internal,Head of Customer Experience
+Customer_Service/CS_Escalation_Matrix.xlsx,Customer_Service,Escalation Matrix,Customer Escalation Matrix,2026.1,2026-01-01,current,internal,Head of Customer Experience

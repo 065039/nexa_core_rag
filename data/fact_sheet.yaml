@@ -1,0 +1,94 @@
+# Ground-truth fact sheet for the NexaCore corpus.
+# Used by scripts/validate_markdown.py (parser fidelity) and as the answer key
+# for evaluation/questions.jsonl. Each "must_contain" string must survive parsing.
+
+organization: NexaCore Technologies Pvt. Ltd.
+departments: [HR, Finance, IT, Procurement, Legal, Customer_Service]
+
+deliberate_test_cases:
+  version_change: "HR Leave Policy 2025.1 (superseded) vs 2026.1 (current)"
+  conflict: "Expense claim deadline: HR Employee Handbook says 45 days, Finance Expense Policy says 30 days"
+  restricted_documents: [HR_Benefits_by_Grade.xlsx, FIN_Vendor_Payment_Terms.docx, LEGAL_NDA_Standard_Terms.docx]
+  cross_department: "Vendor onboarding spans Procurement, IT, Legal and Finance"
+
+facts:
+  HR_Leave_Policy_2025:
+    - {fact: Annual leave (2025), must_contain: ["18 days per year"]}
+    - {fact: Carry forward (2025), must_contain: ["maximum of 5 days"]}
+    - {fact: WFH (2025), must_contain: ["2 days per week"]}
+    - {fact: Paternity leave (2025), must_contain: ["5 days"]}
+  HR_Leave_Policy_2026:
+    - {fact: Annual leave, must_contain: ["20 days per year"]}
+    - {fact: Sick leave, must_contain: ["12 days per year"]}
+    - {fact: Carry forward, must_contain: ["maximum of 10 days"]}
+    - {fact: WFH, must_contain: ["3 days per week"]}
+    - {fact: Paternity leave, must_contain: ["10 days", "6 months"]}
+    - {fact: Maternity leave, must_contain: ["26 weeks"]}
+  HR_Employee_Handbook:
+    - {fact: Working hours, must_contain: ["9:30 AM to 6:30 PM"]}
+    - {fact: Probation, must_contain: ["6 months"]}
+    - {fact: Notice period confirmed, must_contain: ["Confirmed employees", "60 days"]}
+    - {fact: Notice period managers, must_contain: ["Managers and above", "90 days"]}
+    - {fact: Expense claim deadline (conflict), must_contain: ["45 days"]}
+    - {fact: Grievance window, must_contain: ["30 days"]}
+    - {fact: Vendor gift limit, must_contain: ["INR 2,000"]}
+  HR_Benefits_by_Grade:
+    - {fact: G3 health cover, must_contain: ["G3", "7,50,000"]}
+    - {fact: G5 learning budget, must_contain: ["G5", "1,00,000"]}
+  FIN_Expense_Reimbursement_Policy:
+    - {fact: Claim deadline, must_contain: ["within 30 days"]}
+    - {fact: Receipt threshold, must_contain: ["INR 500"]}
+    - {fact: Metro per diem, must_contain: ["INR 3,000"]}
+    - {fact: Hotel G4-G5 metro, must_contain: ["INR 12,000"]}
+    - {fact: Reimbursement time, must_contain: ["10 working days"]}
+  FIN_Approval_Matrix:
+    - {fact: Up to 50k approver, must_contain: ["Department Manager"]}
+    - {fact: 2L to 10L approver, must_contain: ["2,00,001 to 10,00,000", "Finance Controller"]}
+    - {fact: Above 10L approver, must_contain: ["CFO and CEO jointly"]}
+    - {fact: Refund above 50k, must_contain: ["Above 50,000"]}
+  FIN_Vendor_Payment_Terms:
+    - {fact: Payment terms, must_contain: ["45 days"]}
+    - {fact: Advance cap, must_contain: ["20%"]}
+    - {fact: Bank verification, must_contain: ["penny-drop"]}
+  IT_Information_Security_Policy:
+    - {fact: Password length, must_contain: ["12 characters"]}
+    - {fact: Password rotation, must_contain: ["90 days"]}
+    - {fact: Incident reporting, must_contain: ["2 hours", "security@nexacore.example"]}
+    - {fact: Screen lock, must_contain: ["5 minutes"]}
+  IT_Asset_Management_Policy:
+    - {fact: Laptop refresh, must_contain: ["every 4 years"]}
+    - {fact: Lost laptop reporting, must_contain: ["24 hours"]}
+    - {fact: Software request SLA, must_contain: ["3 business days"]}
+  IT_Vendor_Security_Checklist:
+    - {fact: Pen test recency, must_contain: ["12 months"]}
+    - {fact: Tier 2 reassessment, must_contain: ["Tier 2", "Every 24 months"]}
+  PROC_Procurement_Policy:
+    - {fact: Quotation threshold, must_contain: ["INR 1,00,000"]}
+    - {fact: Onboarding time, must_contain: ["7 working days"]}
+    - {fact: Onboarding security step owner, must_contain: ["Security assessment"]}
+    - {fact: Performance review threshold, must_contain: ["below 70"]}
+  PROC_Vendor_Evaluation_Matrix:
+    - {fact: Price weight, must_contain: ["Price competitiveness", "35"]}
+    - {fact: Preferred vendor band, must_contain: ["85 and above", "Preferred vendor"]}
+  LEGAL_Contract_Management_Policy:
+    - {fact: Review turnaround, must_contain: ["5 business days"]}
+    - {fact: Retention, must_contain: ["8 years"]}
+    - {fact: Renewal notice, must_contain: ["60 days"]}
+    - {fact: Signing above 1 crore, must_contain: ["Above 1,00,00,000", "CEO"]}
+  LEGAL_NDA_Standard_Terms:
+    - {fact: Confidentiality period, must_contain: ["3 years"]}
+    - {fact: Jurisdiction, must_contain: ["New Delhi"]}
+  LEGAL_Data_Privacy_Policy:
+    - {fact: Breach reporting, must_contain: ["6 hours"]}
+    - {fact: Data principal requests, must_contain: ["30 days"]}
+    - {fact: Retention, must_contain: ["3 years after account closure"]}
+  CS_Service_Level_Agreement:
+    - {fact: P1 targets, must_contain: ["P1", "1 hour", "8 hours"]}
+    - {fact: Uptime, must_contain: ["99.5%"]}
+    - {fact: Service credit, must_contain: ["10%", "25%"]}
+  CS_Complaint_and_Refund_Policy:
+    - {fact: Acknowledgement, must_contain: ["24 hours"]}
+    - {fact: Refund window, must_contain: ["30 days of the invoice date"]}
+    - {fact: Refund processing, must_contain: ["7 working days"]}
+  CS_Escalation_Matrix:
+    - {fact: L3 contact, must_contain: ["cx-head@nexacore.example"]}
