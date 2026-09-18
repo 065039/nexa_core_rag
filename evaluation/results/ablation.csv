@@ -1,0 +1,10 @@
+access_ok,answer_correct,chunk_size,citation_correct,coverage@5,faithfulness,hit@1,hit@3,hit@5,mean_retrieval_ms,mean_total_ms,mrr,nodes,p95_retrieval_ms,p95_total_ms,questions,relevancy,strategy
+,,128,,0.95,,0.95,0.95,0.95,29.895,,0.95,49,39.3,,20,,fixed
+,,256,,1.0,,0.9,1,1,39.12,,0.933,24,69.0,,20,,fixed
+,,512,,1.0,,0.9,0.95,1,25.26,,0.929,18,31.2,,20,,fixed
+,,128,,1.0,,1,1,1,84.33,,1.0,85,140.0,,20,,structure_no_rows
+,,256,,1.0,,1,1,1,74.09,,1.0,80,115.8,,20,,structure_no_rows
+,,512,,1.0,,1,1,1,85.0,,1.0,80,154.4,,20,,structure_no_rows
+,,128,,1.0,,1,1,1,120.195,,1.0,147,198.7,,20,,structure
+,,256,,1.0,,1,1,1,102.25,,1.0,142,166.6,,20,,structure
+,,512,,1.0,,1,1,1,105.125,,1.0,142,173.8,,20,,structure

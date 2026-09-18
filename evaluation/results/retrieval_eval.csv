@@ -1,0 +1,24 @@
+category,id,access_ok,coverage@5,hit@1,hit@3,hit@5,retrieval_ms,retrieved_docs,rr,top_score
+direct,Q01,,1.0,1,1,1,82.3,"[""HR_Leave_Policy_2026""]",1.0,0.7857
+direct,Q02,,1.0,1,1,1,240.0,"[""IT_Information_Security_Policy"", ""LEGAL_Data_Privacy_Policy"", ""CS_Service_Level_Agreement"", ""FIN_Approval_Matrix""]",1.0,0.7373
+direct,Q03,,1.0,1,1,1,74.8,"[""LEGAL_Data_Privacy_Policy"", ""IT_Information_Security_Policy""]",1.0,0.8288
+direct,Q04,,1.0,1,1,1,15.3,"[""LEGAL_Contract_Management_Policy"", ""LEGAL_Data_Privacy_Policy""]",1.0,0.8709
+direct,Q05,,1.0,1,1,1,28.9,"[""CS_Service_Level_Agreement""]",1.0,0.8836
+direct,Q06,,1.0,1,1,1,15.2,"[""IT_Asset_Management_Policy"", ""IT_Information_Security_Policy""]",1.0,0.7958
+paraphrased,Q07,,1.0,1,1,1,153.8,"[""HR_Leave_Policy_2026"", ""FIN_Expense_Reimbursement_Policy"", ""FIN_Approval_Matrix""]",1.0,0.7442
+paraphrased,Q08,,1.0,1,1,1,114.6,"[""IT_Asset_Management_Policy"", ""IT_Information_Security_Policy""]",1.0,0.7701
+paraphrased,Q09,,1.0,1,1,1,113.2,"[""CS_Complaint_and_Refund_Policy"", ""LEGAL_Data_Privacy_Policy"", ""FIN_Expense_Reimbursement_Policy"", ""IT_Asset_Management_Policy"", ""LEGAL_Contract_Management_Policy""]",1.0,0.7648
+paraphrased,Q10,,1.0,1,1,1,163.3,"[""HR_Employee_Handbook"", ""HR_Leave_Policy_2026"", ""LEGAL_Contract_Management_Policy"", ""CS_Complaint_and_Refund_Policy"", ""IT_Information_Security_Policy""]",1.0,0.7171
+table,Q11,,1.0,1,1,1,111.6,"[""FIN_Approval_Matrix"", ""PROC_Procurement_Policy"", ""LEGAL_Contract_Management_Policy"", ""CS_Complaint_and_Refund_Policy""]",1.0,0.6965
+table,Q12,,1.0,1,1,1,17.2,"[""CS_Service_Level_Agreement"", ""CS_Escalation_Matrix""]",1.0,0.7189
+table,Q13,,1.0,1,1,1,155.5,"[""PROC_Vendor_Evaluation_Matrix"", ""PROC_Procurement_Policy""]",1.0,0.779
+table,Q14,,1.0,1,1,1,163.6,"[""FIN_Expense_Reimbursement_Policy""]",1.0,0.7191
+cross_department,Q15,,1.0,1,1,1,115.9,"[""PROC_Procurement_Policy"", ""IT_Vendor_Security_Checklist""]",1.0,0.8129
+cross_department,Q16,,1.0,1,1,1,112.9,"[""CS_Complaint_and_Refund_Policy"", ""FIN_Approval_Matrix""]",1.0,0.807
+cross_department,Q17,,1.0,1,1,1,115.0,"[""IT_Vendor_Security_Checklist"", ""PROC_Procurement_Policy"", ""LEGAL_Data_Privacy_Policy""]",1.0,0.7625
+version,Q18,,1.0,1,1,1,16.6,"[""HR_Leave_Policy_2026"", ""HR_Leave_Policy_2025""]",1.0,0.8229
+conflict,Q19,,1.0,1,1,1,112.2,"[""FIN_Expense_Reimbursement_Policy"", ""HR_Employee_Handbook""]",1.0,0.8202
+restricted_denied,Q20,1,,,,,93.8,"[""LEGAL_Data_Privacy_Policy"", ""LEGAL_Contract_Management_Policy"", ""HR_Leave_Policy_2026"", ""CS_Complaint_and_Refund_Policy"", ""FIN_Expense_Reimbursement_Policy""]",,0.6805
+restricted_allowed,Q21,,1.0,1,1,1,121.6,"[""LEGAL_NDA_Standard_Terms""]",1.0,0.8695
+unsupported,Q22,,,,,,235.4,"[""FIN_Expense_Reimbursement_Policy"", ""HR_Leave_Policy_2026"", ""IT_Asset_Management_Policy"", ""LEGAL_Contract_Management_Policy""]",,0.663
+unsupported,Q23,,,,,,196.2,"[""FIN_Expense_Reimbursement_Policy"", ""HR_Leave_Policy_2026"", ""LEGAL_Contract_Management_Policy"", ""FIN_Approval_Matrix""]",,0.6321

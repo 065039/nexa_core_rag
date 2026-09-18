@@ -1,0 +1,25 @@
+# Docling Parser Fidelity Report
+
+Documents converted: 18/18  
+Overall fact recall: 62/62 (100.0%)
+
+| document | status | fact_recall | headings_src_md | tables_src_md | table_cell_recall | bullets_src_md | missed_facts |
+|---|---|---|---|---|---|---|---|
+| HR_Leave_Policy_2025.pdf | OK | 4/4 | 6/6 | 1/1 | 100% | 3/3 |  |
+| HR_Leave_Policy_2026.pdf | OK | 6/6 | 7/7 | 1/1 | 100% | 8/3 |  |
+| HR_Employee_Handbook.docx | OK | 7/7 | 7/7 | 1/1 | 100% | 3/3 |  |
+| HR_Benefits_by_Grade.xlsx | OK | 2/2 | 0/0 | 2/2 | 100% | 0/0 |  |
+| FIN_Expense_Reimbursement_Policy.pdf | OK | 5/5 | 6/6 | 1/1 | 100% | 3/3 |  |
+| FIN_Approval_Matrix.xlsx | OK | 4/4 | 0/0 | 2/2 | 100% | 0/0 |  |
+| FIN_Vendor_Payment_Terms.docx | OK | 3/3 | 5/5 | 0/0 | n/a | 3/3 |  |
+| IT_Information_Security_Policy.pdf | OK | 4/4 | 6/6 | 1/1 | 100% | 3/3 |  |
+| IT_Asset_Management_Policy.docx | OK | 3/3 | 5/5 | 0/0 | n/a | 0/0 |  |
+| IT_Vendor_Security_Checklist.xlsx | OK | 2/2 | 0/0 | 2/2 | 100% | 0/0 |  |
+| PROC_Procurement_Policy.pdf | OK | 4/4 | 5/4 | 1/1 | 100% | 0/2 |  |
+| PROC_Vendor_Evaluation_Matrix.xlsx | OK | 2/2 | 0/0 | 2/2 | 100% | 0/0 |  |
+| LEGAL_Contract_Management_Policy.pdf | OK | 4/4 | 5/4 | 1/1 | 100% | 0/0 |  |
+| LEGAL_NDA_Standard_Terms.docx | OK | 2/2 | 5/5 | 0/0 | n/a | 0/0 |  |
+| LEGAL_Data_Privacy_Policy.docx | OK | 3/3 | 5/5 | 0/0 | n/a | 0/0 |  |
+| CS_Service_Level_Agreement.pdf | OK | 3/3 | 5/5 | 1/1 | 100% | 0/0 |  |
+| CS_Complaint_and_Refund_Policy.docx | OK | 3/3 | 5/5 | 0/0 | n/a | 3/3 |  |
+| CS_Escalation_Matrix.xlsx | OK | 1/1 | 0/0 | 1/1 | 100% | 0/0 |  |

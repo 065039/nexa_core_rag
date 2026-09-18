@@ -1,0 +1,38 @@
+# Runs the project from pre-built images, with no image downloads.
+# Load the images first (scripts/wsl_load_images.sh), then:
+#   docker compose -f docker-compose.offline.yml up -d qdrant
+#   docker compose -f docker-compose.offline.yml run --rm app python -m src.parser
+#   docker compose -f docker-compose.offline.yml up app
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    pull_policy: never
+    container_name: nexacore-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  app:
+    image: nexacore-rag:latest
+    pull_policy: never
+    depends_on:
+      - qdrant
+    env_file:
+      - .env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_PATH: ""
+      # Uncomment if Ollama Cloud must go through a proxy running on the Windows host
+      # HTTPS_PROXY: http://host.docker.internal:8899
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    working_dir: /app
+    volumes:
+      - ./:/app          # live code and data from the project folder
+    ports:
+      - "8501:8501"
+
+volumes:
+  qdrant_data:

@@ -1,0 +1,24 @@
+# Role-based access control for retrieval.
+# Every role can read "internal" documents of all departments.
+# "restricted" documents are visible only to roles that list the owning department below.
+# Enforced as a Qdrant metadata filter on the "access_key" payload field (department|access_level).
+
+roles:
+  Employee:
+    restricted_departments: []
+  HR Manager:
+    restricted_departments: [HR]
+  Finance Manager:
+    restricted_departments: [Finance]
+  IT Administrator:
+    restricted_departments: [IT]
+  Procurement Officer:
+    restricted_departments: [Procurement]
+  Legal Counsel:
+    restricted_departments: [Legal]
+  Customer Service Manager:
+    restricted_departments: [Customer_Service]
+  Executive:
+    restricted_departments: [HR, Finance, IT, Procurement, Legal, Customer_Service]
+
+default_role: Employee
